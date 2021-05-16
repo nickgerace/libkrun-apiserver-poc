@@ -1,11 +1,12 @@
-# krunvm-apiserver
+# libkrun-apiserver
 
-[![GitHub](https://img.shields.io/github/license/nickgerace/krunvm-apiserver?style=flat-square)](./LICENSE)
+[![GitHub](https://img.shields.io/github/license/nickgerace/libkrun-apiserver?style=flat-square)](./LICENSE)
 
 This repository is extremely experimental and is a wrapper around [containers/krunvm](https://github.com/containers/krunvm).
 It is recommended to interface with [containers/libkrun](https://github.com/containers/libkrun) directly rather than executing `krunvm` commands.
 However, the functionality between calling `krunvm` directly and making `libkrun` library calls should be roughly equivalent.
 Thus, this experiment exists to support the idea of an "API server for `libkrun`".
+If the experiment continues, `krunvm` should be replaced with direct `libkrun` calls.
 
 ## Getting Started
 

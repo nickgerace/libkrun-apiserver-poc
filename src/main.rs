@@ -29,7 +29,7 @@ async fn main() -> Result<()> {
     }
 
     match env::var("VALIDATE") {
-        Ok(o) if o.to_lowercase() == "true" => krunvm_apiserver::validate()?,
+        Ok(o) if o.to_lowercase() == "true" => libkrun_apiserver::validate()?,
         _ => debug!("Skipping extra validation step"),
     }
 
@@ -39,7 +39,7 @@ async fn main() -> Result<()> {
         .and(warp::body::content_length_limit(1024 * 16))
         .and(warp::body::json())
         .map(|config: Input| {
-            match krunvm_apiserver::krunvm(&config.args) {
+            match libkrun_apiserver::krunvm(&config.args) {
                 Ok(o) => match o {
                     Some(s) => info!("Exited with status code: {}", s),
                     None => info!("Status code unknown"),

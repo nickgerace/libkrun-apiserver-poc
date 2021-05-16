@@ -1,5 +1,5 @@
 [package]
-name = "krunvm-apiserver"
+name = "libkrun-apiserver"
 version = "0.1.0"
 authors = ["Nick Gerace <nickagerace@gmail.com>"]
 edition = "2018"

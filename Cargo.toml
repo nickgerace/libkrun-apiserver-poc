@@ -1,0 +1,18 @@
+[package]
+name = "krunvm-apiserver"
+version = "0.1.0"
+authors = ["Nick Gerace <nickagerace@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0"
+chrono = "0.4"
+env_logger = "0.8"
+futures = "0.3"
+log = "0.4"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+users = "0.11"
+warp = "0.3"

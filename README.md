@@ -1,3 +1,10 @@
+# NOTICE
+
+This repository has been archived.
+It was intended as a proof-of-concept for hosting an API server (HTTP) to leverage `libkrun`.
+It is not being pursued at this time, but may continue to do so in the future.
+Thank you for checking out the project.
+
 # libkrun-apiserver
 
 [![GitHub](https://img.shields.io/github/license/nickgerace/libkrun-apiserver?style=flat-square)](./LICENSE)
